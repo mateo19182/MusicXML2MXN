@@ -16,12 +16,12 @@ Structura MusicXML:
         Cada score-part tiene como único elemento obligatorio <part-name>, el resto son opcionales y no se suelen utilizar por lo que tampoco los reconoceré.
         La mayoría de ejemplos contienen 1 solo score-part ya que es el caso mas común.
 
-    <part> debe tener un atributo con su id, contiene una secuencia de <measures>.
-        cada <measure> puede contener un elemento <atributes>, que puede contener:
-            <divisions>, <key> (que contiene <fifths>), <time> (debe contener <beats> y <beat-type), <clef> (<sign> y <line>)...
-            hay muchos otros elementos que puede haber dentro de un measure pero el mas importante es <note>
-                <note> debe tener como mínimo <pitch>, <duration> y <type>
-                tambien puede contener el elmento <chord>, que añade mucha complejidad.
+<part> debe tener un atributo con su id, contiene una secuencia de <measures>.
+cada <measure> puede contener un elemento <atributes>, que puede contener:
+<divisions>, <key> (que contiene <fifths>), <time> (debe contener <beats> y <beat-type), <clef> (<sign> y <line>)...
+hay muchos otros elementos que puede haber dentro de un measure pero el mas importante es <note>
+<note> debe tener como mínimo <pitch>, <duration> y <type>
+tambien puede contener el elmento <chord>, que añade mucha complejidad.
     
 Structura MNX: (json), 3 objetos principales:
     "MNX", contiene "version"
